@@ -5,7 +5,7 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <f:metadata>
-        <f:viewParam name="nb" value="#{bean1.nombre}"/>
+        <f:viewParam name="nb" value="#{bean2.nombre}"/>
     </f:metadata>
     <h:head>
         <title>Application&gt;affichage_4</title>
@@ -14,10 +14,10 @@
     <h:body>
         <h1>Application&gt;affichage_4</h1>
         Les nombres : <br/>
-        <ui:repeat value="#{bean1.nombresSuivants}" var="n" varStatus="status">
+        <ui:repeat value="#{bean2.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
         <br/>
-        <h:link outcome="formulaire_4?nb=#{bean1.nombre}" value="Saisir un autre nombre"/>
+        <h:link outcome="formulaire_4?nb=#{bean2.nombre}" value="Saisir un autre nombre"/>
     </h:body>
 </html>

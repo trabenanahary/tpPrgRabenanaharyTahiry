@@ -4,7 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <f:metadata>
-        <f:viewParam name="nb" value="#{bean1.nombre}"/>
+        <f:viewParam name="nb" value="#{bean2.nombre}"/>
     </f:metadata>
     <h:head>
         <title>Application&gt;formulaire_4</title>
@@ -15,8 +15,8 @@
 
      <h:form>
         <h:outputLabel value="Entrez un nombre" for="nombre"/>
-        <h:inputText id="nombre" value="#{bean1.nombre}"/><h:messages></h:messages>
-        <h:commandButton value="Valider" action="#{bean1.afficher()}"/>
+        <h:inputText id="nombre" value="#{bean2.nombre}"/><h:messages></h:messages>
+        <h:commandButton value="Valider" action="#{bean2.afficher()}"/>
       </h:form>
 
     </h:body>
